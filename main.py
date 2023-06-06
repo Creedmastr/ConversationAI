@@ -2,8 +2,8 @@ from functions import audiorecord
 from functions import recognize
 from functions import char
 from functions import translation
+from functions import t2s
 import os
-import so_vits_svc_fork
 
 fs = 44100
 seconds = 3
@@ -23,8 +23,6 @@ if not question == 'y' or not question == 'yes':
 
 print(speech)
 
-
-
 answer = char.get_answer(char_id, speech)
 translated_text = translation.translate(answer['replies'][0]['text'], 'en', 'ja')
 
@@ -33,3 +31,5 @@ print("ENGLISH: ")
 print(answer['replies'][0]['text'])
 print("JAPANESE: ")
 print(translated_text)
+
+t2s.speak(translated_text, './out/speaked_base.mp3')
