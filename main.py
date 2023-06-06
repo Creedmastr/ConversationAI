@@ -3,6 +3,7 @@ from functions import recognize
 from functions import char
 from functions import translation
 import os
+import so_vits_svc_fork
 
 fs = 44100
 seconds = 3
@@ -21,6 +22,8 @@ if not question == 'y' or not question == 'yes':
     speech = speech + '?'
 
 print(speech)
+
+
 
 answer = char.get_answer(char_id, speech)
 translated_text = translation.translate(answer['replies'][0]['text'], 'en', 'ja')
