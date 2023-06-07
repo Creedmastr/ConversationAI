@@ -1,0 +1,8 @@
+sounddevice
+scipy
+numpy
+pydub
+characterai
+SpeechRecognition
+gtts
+deep_translator
