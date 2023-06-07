@@ -1,10 +1,6 @@
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
 def translate(text, src, dest):
     print("INFO: Translating")
-    translator = Translator()
-
-    # Translate the text from English to Japanese
-    translated_text = translator.translate(text, src=src, dest=dest).text
-
+    translated_text = GoogleTranslator(source=src, target=dest).translate(text)
     return translated_text

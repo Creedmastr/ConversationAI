@@ -8,7 +8,7 @@ import os
 fs = 44100
 seconds = 3
 file_path = "./out/output.wav"
-char_id = "eP9-QXMygAHz3xvWq8FZigmV8Rz_xozAtp3MEqzReYw"
+char_id = "0NJqYQYuB8SEHHKzh2qHYzvMSMrlgWSlJldNXi8TTPs"
 
 question = input('Add question mark? Yes by default')
 
@@ -33,3 +33,4 @@ print("JAPANESE: ")
 print(translated_text)
 
 t2s.speak(translated_text, './out/speaked_base.mp3')
+
