@@ -11,7 +11,7 @@ The .pth model was made by Sakushi.
 
 The first thing to do, is to download just the 'installer.ps1' that is at the root of this github, and after that run it.
 Please note that you'll need to make the **RVC installation working** by adding the necessary following files that can be found on the original Huggingface space: https://huggingface.co/lj1995/VoiceConversionWebUI/tree/main:
-`
+```
 hubert_base.pt
 
 ./pretrained 
@@ -27,7 +27,7 @@ If you want to test the v2 version model (the v2 version model changes the featu
 ./ffmpeg
 
 ./ffprobe
-`
+```
 The only python version **I know** works for this entire project is **3.9.8**. It will download all the necessary files from this repo and my other RVC fork repo.
 
 After that, you'll need an character.ai key, which is very easy to get. Follow these steps: 
