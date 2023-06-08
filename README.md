@@ -16,7 +16,7 @@ After that, you'll need an character.ai key, which is very easy to get. Follow t
 2. Go to `Network` in your browser's DevTools (F12) and refresh page
 3. Search for `/dj-rest-auth/auth0/`
 4. Copy the `key` value
-5. Create a `api_token.py` file, and just create a variable named `TOKEN`, with the `key` value we previously got attached to it.
+5. Create a `api_token.py` file at the **root** of this project, and just create a variable named `TOKEN`, with the `key` value we previously got attached to it.
 
 ## Requirements
 
